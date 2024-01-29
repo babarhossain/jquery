@@ -1,0 +1,111 @@
+/* COMMON CSS STARTS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+
+/* COMMON CSS END */
+
+
+.navbar {
+    width: 100%;
+    background-color: #f56ce9;
+    height: 50px;
+    box-shadow: rgb(148, 144, 144) 0px 1px 2px 0px, rgba(231, 231, 231, 0.651) 0px 2px 6px 2px;
+}
+nav .menu {
+    width: 86%;
+    text-align: right;
+}
+
+nav .menu ul li {
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+nav .menu ul li a{
+    color: rgb(7, 7, 7);
+}
+
+.navbar .fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+button{
+    margin: 25px 35px;
+}
+
+.img img{
+    width: 300px;
+    height: 350px;
+    margin: 50px 30px;
+
+
+}
+
+#faqWrapper{
+    margin: 80px 0;
+}
+#faqWrapper .faq{
+    margin-bottom: 8px;
+}
+
+#faqWrapper .faq .faqHeader{
+    display: flex;
+    justify-content: space-between;
+    background-color: azure;
+    padding: 15px 20px;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+#faqWrapper .faq .faqBody{
+    border: 1px solid #ccc;
+    opacity: o;
+    visibility: hidden;
+    height: 0;
+    transition: 0.03s linear;
+
+
+}
+#faqWrapper .faq.active .faqBody{
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    padding: 10px;   
+}
+
+#faqWrapper .faq.active .faqHeader span{
+    transform: rotate(180deg);
+}
